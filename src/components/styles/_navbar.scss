@@ -1,0 +1,96 @@
+.header {
+  position: fixed;
+  top: 0;
+  background: $black;
+  color: $white;
+  width: 100vw;
+  height: 4.3rem;
+
+  nav.container {
+    padding: 0 $mobile-padding-x;
+    height: 100%;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+
+    &__line {
+      width: 100%;
+      height: 2.5px;
+      background: $white;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px $outline;
+    }
+  }
+
+  .nav-links-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $m) {
+  .header {
+    nav.container {
+      padding: 0 $tablet-padding-x;
+    }
+
+    .burger-button {
+      display: none;
+    }
+
+    .col1 {
+      flex-grow: 1;
+    }
+
+    .nav-links-desktop {
+      display: block;
+      flex-grow: 3;
+
+      ul {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-column-gap: 2.5rem;
+        place-content: center end;
+        list-style-type: none;
+        font-size: 1.05rem;
+
+        a {
+          @include flex();
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $l) {
+  .header {
+    height: 5rem;
+    nav.container {
+      padding: 0 $desktop-padding-x;
+    }
+  }
+}
