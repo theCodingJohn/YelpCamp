@@ -43,7 +43,7 @@ const Navbar = () => {
         },
         0.2
       )
-      .reverse();
+      .reverse(); // eslint-disable-next-line
   }, []);
 
   const toggleBurgerTimeline = () => {

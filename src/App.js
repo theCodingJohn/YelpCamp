@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Campgrounds, CampgroundDetail } from "./pages";
 
 // components
-import { Navbar } from "./components";
+import { Navbar, Footer } from "./components";
 
 // styles
 import "./App.css";
@@ -22,6 +22,7 @@ const App = () => {
           component={CampgroundDetail}
         ></Route>
       </Switch>
+      <Footer />
     </Router>
   );
 };

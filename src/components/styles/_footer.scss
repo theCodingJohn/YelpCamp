@@ -1,0 +1,33 @@
+.footer {
+  background-color: black;
+  color: $gray;
+  padding: 0 $mobile-padding-x;
+  font-size: 0.9rem;
+  height: 2.5rem;
+  width: 100%;
+  margin-top: auto;
+
+  .row {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .col2 {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $m) {
+  .footer {
+    padding: 0 5rem;
+  }
+}
+
+@media (min-width: $l) {
+  .footer {
+    padding: 0 8rem;
+  }
+}

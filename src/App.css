@@ -25,6 +25,17 @@
   }
 }
 
+div#root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -117,7 +128,7 @@
     grid-column-gap: 2.5rem;
     place-content: center end;
     list-style-type: none;
-    font-size: 1.05rem;
+    font-size: 0.95rem;
   }
   .header .nav-links-desktop ul a {
     display: -webkit-box;
@@ -139,11 +150,52 @@
 }
 
 @media (min-width: 992px) {
-  .header {
-    height: 5rem;
-  }
   .header nav.container {
     padding: 0 6rem;
+  }
+}
+
+.footer {
+  background-color: black;
+  color: #a8a8a8d0;
+  padding: 0 1.5rem;
+  font-size: 0.9rem;
+  height: 2.5rem;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.footer .col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 0 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer {
+    padding: 0 8rem;
   }
 }
 /*# sourceMappingURL=App.css.map */

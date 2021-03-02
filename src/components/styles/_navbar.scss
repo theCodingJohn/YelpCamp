@@ -74,7 +74,7 @@
         grid-column-gap: 2.5rem;
         place-content: center end;
         list-style-type: none;
-        font-size: 1.05rem;
+        font-size: 0.95rem;
 
         a {
           @include flex();
@@ -88,7 +88,6 @@
 
 @media (min-width: $l) {
   .header {
-    height: 5rem;
     nav.container {
       padding: 0 $desktop-padding-x;
     }
