@@ -19,14 +19,19 @@ const CampgroundDetail = () => {
   }, []);
 
   return (
-    <>
+    <main className="main">
       {campground && (
         <>
           <h1>{campground.title}</h1>
+          <img
+            style={{ width: "640px", height: "426px" }}
+            src={`${campground.image}`}
+            alt=""
+          ></img>
           <p>{campground._id}</p>
         </>
       )}
-    </>
+    </main>
   );
 };
 

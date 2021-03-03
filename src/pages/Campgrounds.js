@@ -18,7 +18,7 @@ const Campgrounds = () => {
   }, []);
 
   return (
-    <>
+    <main className="main">
       <h1>All Campgrounds</h1>
       <ul>
         {campgrounds &&
@@ -30,7 +30,7 @@ const Campgrounds = () => {
             );
           })}
       </ul>
-    </>
+    </main>
   );
 };
 

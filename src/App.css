@@ -36,6 +36,10 @@ div#root {
   min-height: 100vh;
 }
 
+main.main {
+  margin-top: 4.3rem;
+}
+
 .header {
   position: fixed;
   top: 0;
