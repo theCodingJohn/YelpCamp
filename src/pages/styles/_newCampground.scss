@@ -1,0 +1,17 @@
+.new-campground {
+  .container {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .input-group {
+    label,
+    input,
+    textarea {
+      display: block;
+    }
+  }
+}

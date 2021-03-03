@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import gsap from "gsap";
 
 const Navbar = () => {
@@ -67,10 +68,10 @@ const Navbar = () => {
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="/campgrounds">Campgrounds</a>
+                <Link to="/campgrounds">Campgrounds</Link>
               </li>
               <li>
-                <a href="/">New Campgrounds</a>
+                <Link to="/campgrounds/new">New Campgrounds</Link>
               </li>
             </ul>
           </div>

@@ -202,4 +202,18 @@ main.main {
     padding: 0 8rem;
   }
 }
+
+.new-campground .container {
+  width: 100%;
+}
+
+.new-campground h1 {
+  font-size: 1.5rem;
+}
+
+.new-campground .input-group label,
+.new-campground .input-group input,
+.new-campground .input-group textarea {
+  display: block;
+}
 /*# sourceMappingURL=App.css.map */
